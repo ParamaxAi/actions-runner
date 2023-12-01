@@ -4,6 +4,8 @@ FROM ghcr.io/actions/actions-runner:2.311.0
 ARG CURL_VER=7.81.0-1ubuntu1.14
 # renovate: datasource=repology depName=ubuntu_22_04/git-lfs versioning=loose
 ARG GIT_LFS_VER=3.0.2-1ubuntu0.2
+# renovate: datasource=repology depName=ubuntu_22_04/unzip versioning=loose
+ARG UNZIP_VER=6.0-26ubuntu3.1
 
 # renovate: datasource=docker depName=gcr.io/google.com/cloudsdktool/google-cloud-cli
 ARG GOOGLE_VER=454.0.0
@@ -17,6 +19,7 @@ RUN apt-get update \
  && apt-get install --no-install-recommends -y \
         "curl=$CURL_VER" \
         "git-lfs=$GIT_LFS_VER" \
+        "unzip=$UNZIP_VER" \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* \
  # gcloud
