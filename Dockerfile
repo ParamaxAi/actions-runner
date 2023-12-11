@@ -20,8 +20,11 @@ USER root
 RUN apt-get update \
  && apt-get install --no-install-recommends -y \
         "curl=$CURL_VER" \
+        # Required to pull LFS object
         "git-lfs=$GIT_LFS_VER" \
+        # Required to unzip packer
         "unzip=$UNZIP_VER" \
+        # Required to git clone using deploy keys
         "openssh-client=$OPENSSH_VER"\
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* \
