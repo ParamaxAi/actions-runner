@@ -1,7 +1,7 @@
 FROM ghcr.io/actions/actions-runner:2.311.0
 
 # renovate: datasource=repology depName=ubuntu_22_04/curl versioning=loose
-ARG CURL_VER=7.81.0-1ubuntu1.14
+ARG CURL_VER=7.81.0-1ubuntu1.15
 # renovate: datasource=repology depName=ubuntu_22_04/git-lfs versioning=loose
 ARG GIT_LFS_VER=3.0.2-1ubuntu0.2
 # renovate: datasource=repology depName=ubuntu_22_04/unzip versioning=loose
