@@ -6,9 +6,11 @@ ARG CURL_VER=7.81.0-1ubuntu1.14
 ARG GIT_LFS_VER=3.0.2-1ubuntu0.2
 # renovate: datasource=repology depName=ubuntu_22_04/unzip versioning=loose
 ARG UNZIP_VER=6.0-26ubuntu3.1
+# renovate: datasource=repology depName=ubuntu_22_04/openssh-client versioning=loose
+ARG OPENSSH_VER=1:8.9p1-3ubuntu0.4
 
 # renovate: datasource=docker depName=gcr.io/google.com/cloudsdktool/google-cloud-cli
-ARG GOOGLE_VER=454.0.0
+ARG GOOGLE_VER=456.0.0
 ARG GOOGLE_DIR=/usr/local/google-cloud-sdk
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
@@ -20,6 +22,7 @@ RUN apt-get update \
         "curl=$CURL_VER" \
         "git-lfs=$GIT_LFS_VER" \
         "unzip=$UNZIP_VER" \
+        "openssh-client=$OPENSSH_VER"\
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* \
  # gcloud
