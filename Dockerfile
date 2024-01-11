@@ -7,7 +7,7 @@ ARG GIT_LFS_VER=3.0.2-1ubuntu0.2
 # renovate: datasource=repology depName=ubuntu_22_04/unzip versioning=loose
 ARG UNZIP_VER=6.0-26ubuntu3.1
 # renovate: datasource=repology depName=ubuntu_22_04/openssh-client versioning=loose
-ARG OPENSSH_VER=1:8.9p1-3ubuntu0.5
+ARG OPENSSH_VER=1:8.9p1-3ubuntu0.6
 
 # renovate: datasource=docker depName=gcr.io/google.com/cloudsdktool/google-cloud-cli
 ARG GOOGLE_VER=459.0.0
