@@ -1,4 +1,4 @@
-FROM ghcr.io/actions/actions-runner:2.311.0
+FROM ghcr.io/actions/actions-runner:2.312.0@sha256:929ec8ed96945ca3be9559920a4860996fda594437688d78e8e2c267fa970fa4
 
 # renovate: datasource=repology depName=ubuntu_22_04/curl versioning=loose
 ARG CURL_VER=7.81.0-1ubuntu1.15
