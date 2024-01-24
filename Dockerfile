@@ -10,7 +10,7 @@ ARG UNZIP_VER=6.0-26ubuntu3.1
 ARG OPENSSH_VER=1:8.9p1-3ubuntu0.6
 
 # renovate: datasource=docker depName=gcr.io/google.com/cloudsdktool/google-cloud-cli
-ARG GOOGLE_VER=460.0.0
+ARG GOOGLE_VER=461.0.0
 ARG GOOGLE_DIR=/usr/local/google-cloud-sdk
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
